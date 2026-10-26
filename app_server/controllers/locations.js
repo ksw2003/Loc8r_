@@ -4,6 +4,8 @@ var request = require('request');
 const apiOptions = {
   server: 'http://localhost:3000'
 };
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('API 주소:', apiOptions.server);
 if(process.env.NODE_ENV === 'production') {
   apiOptions.server = 'https://loc8r-qus3.onrender.com';
 }
